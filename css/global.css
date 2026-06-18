@@ -1,0 +1,92 @@
+/* Fonts START */
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto Bold'), local('Roboto-Bold'),
+		url('../fonts/Roboto-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto Light'), local('Roboto-Light'),
+		url('../fonts/Roboto-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto Black'), local('Roboto-Black'),
+		url('../fonts/Roboto-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto Medium'), local('Roboto-Medium'),
+		url('../fonts/Roboto-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'), local('Roboto-Regular'),
+		url('../fonts/Roboto-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+/* Fonts END */
+
+
+/* Global Styles START */
+:root {}
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Roboto';
+	color: #000;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	position: relative;
+	font-weight: 400;
+}
+
+input, label, textarea, button {
+	font-family: 'Roboto';
+	outline: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+
+input, textarea, div {
+	box-sizing: border-box;
+}
+ul {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+/* Global Styles END */
