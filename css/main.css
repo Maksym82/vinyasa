@@ -1,1 +1,71 @@
 @import url('global.css');
+
+/* Header START */
+.header-top {
+  background-color: #33344f;
+  color: #fff;
+  padding: 18px 0;
+}
+.header-top-row,
+.header-info {
+  display: flex;
+  align-items: center;
+}
+.header-info {
+  margin-left: auto;
+  gap: 25px;
+  align-items: center;
+}
+.header-info-icon img {
+  display: block;
+}
+.header-social {
+  display: flex;
+  gap: 22px;
+}
+.header-social a {
+  transition: 0.5s ease;
+}
+.header-social a:hover {
+  opacity: 0.8;
+}
+.header-social a img {
+  display: block;
+}
+.header-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.header-logo img {
+  max-width: 150px;
+}
+.menu-nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  column-gap: 40px;
+}
+.menu-nav ul .sub-menu {
+  display: none;
+}
+.header-btn a {
+  display: inline-block;
+  background-color: var(--color-1);
+  padding: 14px 50px;
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.header-btn a:hover {
+  background-color: var(--color-1-hover);
+}
+/* Header END */
