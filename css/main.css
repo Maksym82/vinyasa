@@ -47,13 +47,54 @@
   max-width: 150px;
 }
 .menu-nav ul {
+  padding: 0;
+}
+.menu-nav > ul {
   display: flex;
   align-items: center;
   list-style-type: none;
   column-gap: 40px;
 }
+.menu-nav ul li {
+  position: relative;
+  /* display: flex; */
+}
+.menu-nav ul li a {
+  display: block;
+  transition: 0.3s ease;
+}
+.menu-nav ul li.menu-item-has-children {
+  display: flex;
+}
+.menu-nav ul li.menu-item-has-children::after {
+  content: url('../images/caret.svg');
+  margin-left: 8px;
+}
+.menu-nav ul li.menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
 .menu-nav ul .sub-menu {
-  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  list-style-type: none;
+  min-width: 195px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(71, 71, 77, 0.12);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s ease;
+  transform: translateX(20px);
+}
+.menu-nav ul .sub-menu li a {
+  padding: 12px 20px;
+}
+.menu-nav ul .sub-menu li a:hover {
+  background-color: var(--color-1);
+  color: var(--color-white);
 }
 .header-btn a {
   display: inline-block;
