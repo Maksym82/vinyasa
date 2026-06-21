@@ -82,6 +82,8 @@
   list-style-type: none;
   min-width: 195px;
   border-radius: 5px;
+  z-index: 2;
+  background-color: var(--color-white);
   box-shadow: 0 0 5px 0 rgba(71, 71, 77, 0.12);
   overflow: hidden;
   opacity: 0;
@@ -117,6 +119,9 @@
   padding: 120px 0;
   color: var(--color-white);
   z-index: 0;
+  min-height: 660px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .banner-item::after {
   position: absolute;
@@ -140,7 +145,7 @@
   max-width: 572px;
   margin-bottom: 30px;
 }
-.banner-btn {
-
+.swiper-banner .swiper-pagination {
+  bottom: 35px;
 }
 /* Banner END */
