@@ -57,10 +57,11 @@
 
 /* Global Styles START */
 :root {
-  --color-1: #5B78CD;
+  --color-1: #5b78cd;
   --color-1-hover: #465fad;
-  --color-2: #2D3A4E;
+  --color-2: #2d3a4e;
   --color-white: #fff;
+  --size: 50px;
 }
 * {
   box-sizing: border-box;
@@ -102,6 +103,10 @@ p {
   margin-bottom: 20px;
 }
 
+p {
+  line-height: 1.8;
+}
+
 input,
 textarea,
 div {
@@ -123,7 +128,9 @@ a {
 }
 .button {
   background-color: var(--color-1);
+  color: var(--color-white);
   display: inline-block;
+  font-size: 18px;
   padding: 14px 50px;
   border-radius: 5px;
   cursor: pointer;
@@ -136,10 +143,47 @@ a {
   width: 18px;
   height: 18px;
   border: 1px solid var(--color-white);
-  background-color: #D4D4D4;
+  background-color: #d4d4d4;
+  margin: 0 5px !important;
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--color-1);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--color-white);
+  padding: 14px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 5px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px;
+  color: #3d445d;
+}
+.swiper-button-prev {
+  left: 15px;
+}
+.swiper-button-next {
+  right: 15px;
+}
+.p-100 {
+  padding: 100px 0;
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+.title-row .title-text {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 42px;
+}
+.title-row .title-icon {
+  max-width: 58px;
 }
 /* Global Styles END */
