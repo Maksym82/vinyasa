@@ -295,7 +295,66 @@
   gap: 22px;
   justify-content: center;
 }
-.instructors-social a:hover img{
+.instructors-social a:hover img {
   filter: brightness(0.3);
 }
 /* Instructors END */
+
+/* Gallery START */
+.gallery-wrap {
+  background-color: #3f3854;
+}
+.grid-item {
+  float: left;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.grid-sizer,
+.grid-item {
+  width: calc(25% - 15px);
+}
+.grid-item img {
+  max-width: 100%;
+}
+.grid-item a,
+.grid-item a img {
+  display: block;
+}
+.grid-item a:hover::before,
+.grid-item a:hover::after {
+  opacity: 1;
+}
+.grid-item a {
+  position: relative;
+}
+.grid-item a::before {
+  content: url('../images/gallery/magnify.svg');
+  position: absolute;
+  background-color: rgba(37, 31, 31, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.8s ease;
+}
+.grid-item a::after {
+  content: 'Увеличить';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 32px;
+  color: #fff;
+  font-weight: 18;
+  opacity: 0;
+  transition: 0.8s ease;
+}
+.gallery-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Gallery END */
