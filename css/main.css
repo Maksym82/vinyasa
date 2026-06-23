@@ -401,3 +401,55 @@
   margin-bottom: 0;
 }
 /* FAQ END */
+
+/* Reviews START */
+.swiper-reviews .swiper-slide {
+  height: auto;
+}
+.reviews-item {
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--color-1);
+  height: 100%;
+}
+.reviews-thumb {
+  height: 306px;
+  overflow: hidden;
+}
+.reviews-thumb img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.reviews-body {
+  padding: 20px 25px 50px 25px;
+}
+.reviews-name {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.reviews-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #888383;
+  margin-bottom: 30px;
+}
+.reviews-social {
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+  width: calc(100% - 50px);
+  border-top: 1px solid #d8d1d1;
+  padding-top: 20px;
+  display: flex;
+  column-gap: 22px;
+}
+.reviews-social a:hover img {
+  filter: brightness(0.3);
+}
+.swiper-reviews .swiper-pagination {
+  position: static;
+  margin-top: 34px;
+}
+/* Reviews END */

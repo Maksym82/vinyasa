@@ -47,17 +47,30 @@ document.addEventListener(
     // Gallery END
 
     // FAQ START
-    $('.faq-question').on('click', function() {
+    $('.faq-question').on('click', function () {
       var answer = $(this).next('.faq-answer ');
-      if($(this).hasClass('is-active')) {
+      if ($(this).hasClass('is-active')) {
         answer.slideUp();
-        $(this).removeClass('is-active')
+        $(this).removeClass('is-active');
       } else {
         answer.slideDown();
-        $(this).addClass('is-active')
+        $(this).addClass('is-active');
       }
     });
     // FAQ END
+
+    // Reviews START
+    const swiperReviews = new Swiper('.swiper-reviews', {
+      speed: 700,
+      spaceBetween: 20,
+      slidesPerView: 4,
+
+      pagination: {
+        el: '.swiper-reviews .swiper-pagination',
+        clickable: true,
+      },
+    });
+    // Reviews END
   },
   false,
 );
