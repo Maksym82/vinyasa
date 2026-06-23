@@ -45,6 +45,19 @@ document.addEventListener(
       },
     });
     // Gallery END
+
+    // FAQ START
+    $('.faq-question').on('click', function() {
+      var answer = $(this).next('.faq-answer ');
+      if($(this).hasClass('is-active')) {
+        answer.slideUp();
+        $(this).removeClass('is-active')
+      } else {
+        answer.slideDown();
+        $(this).addClass('is-active')
+      }
+    });
+    // FAQ END
   },
   false,
 );
