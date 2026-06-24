@@ -64,6 +64,8 @@ document.addEventListener(
       speed: 700,
       spaceBetween: 20,
       slidesPerView: 4,
+      grabCursor: true,
+      loop: true,
 
       pagination: {
         el: '.swiper-reviews .swiper-pagination',

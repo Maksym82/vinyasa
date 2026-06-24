@@ -133,6 +133,8 @@ a {
   font-size: 18px;
   padding: 14px 50px;
   border-radius: 5px;
+  border: none;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -224,5 +226,28 @@ a {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
+}
+input,
+textarea,
+select {
+  border-radius: 5px;
+  padding: 16px 25px;
+  border: 1px solid #e1e1e1;
+  background-color: #eff3f9;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #9f9e9e;
+}
+select {
+  color: #9f9e9e;
+  appearance: none;
+  background-image: url('../images/contacts/caret-contacts.svg');
+  background-repeat: no-repeat;
+  background-position: 94% center;
+  background-size: 15px;
+  outline: none;
 }
 /* Global Styles END */
