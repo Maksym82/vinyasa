@@ -231,7 +231,7 @@ input,
 textarea,
 select {
   border-radius: 5px;
-  padding: 16px 25px;
+  padding: 16px 20px;
   border: 1px solid #e1e1e1;
   background-color: #eff3f9;
   font-family: 'Roboto';
