@@ -590,6 +590,9 @@
   align-items: center;
   column-gap: 22px;
 }
+.footer-social a:hover img {
+  filter: brightness(0.6);
+}
 /* Right */
 .footer-right {
   display: flex;
