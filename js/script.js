@@ -1,6 +1,31 @@
 document.addEventListener(
   'DOMContentLoaded',
   function () {
+    // Header START
+    $('.open-submenu').on('click', function () {
+      var submenu = $(this).prev('.sub-menu');
+      if (submenu.hasClass('is-active')) {
+        submenu.slideUp();
+        submenu.removeClass('is-active');
+        $(this).removeClass('is-active');
+      } else {
+        submenu.slideDown();
+        submenu.addClass('is-active');
+        $(this).addClass('is-active');
+      }
+    });
+
+    // Hamburger menu
+    var mobilemenu = $('.header-mobile');
+    $('.hamburger').on('click', function () {
+      mobilemenu.addClass('is-active');
+    });
+    $('.header-mobile-close').on('click', function () {
+      mobilemenu.removeClass('is-active');
+    });
+
+    // Header END
+
     // Banner START
     const swiperBanner = new Swiper('.swiper-banner', {
       speed: 700,
