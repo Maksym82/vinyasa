@@ -199,6 +199,9 @@ a {
 .title-column .title-desc {
   color: #9d9c9c;
 }
+.title-column .title-icon img {
+  max-width: 48px;  
+}
 .bg-gray {
   background-color: #f4f4f4;
 }

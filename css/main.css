@@ -240,7 +240,7 @@
 }
 .classes-thumb img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   transition: 0.8s ease;
 }
 .classes-title {
@@ -271,8 +271,11 @@
 }
 .instructors-thumb img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   transition: 0.8s ease;
+  object-fit: cover;
+  object-position: top center;
 }
 .instructors-body {
   padding: 20px 30px 40px 30px;
@@ -703,6 +706,9 @@
   .title-row .title-icon img {
     max-width: 48px;
   }
+  .title-column {
+    margin-bottom: 30px;
+  }
   .p-100 {
     padding: 60px 0;
   }
@@ -829,6 +835,9 @@
   .title-row .title-text {
     font-size: 36px;
   }
+  .title-column .title-text {
+    font-size: 36px;
+  }
   .about-row {
     flex-direction: column;
     row-gap: 30px;
@@ -850,6 +859,41 @@
     margin-top: 130px;
   }
   /* About 992px END */
+
+  /* Classes 992px START */
+  .classes-row {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .classes-item {
+    width: calc(50% - 10px);
+  }
+  /* Classes 992px END */
+
+  /* Instructors 992px START */
+  .instructors-row {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .instructors-item {
+    width: calc(50% - 10px);
+  }
+  .instructors-thumb {
+    height: 400px;
+  }
+  /* Instructors 992px END */
+}
+
+@media (max-width: 768px) {
+  /* Instructors 768px START */
+  .instructors-thumb {
+    height: 320px;
+  }
+  .instructors-title,
+  .instructors-spec {
+    font-size: 20px;
+  }
+  /* Instructors 768px END */
 }
 
 @media (max-width: 575px) {
@@ -888,5 +932,17 @@
     padding: 30px;
   }
   /* About 575px END */
+
+  /* Classes 575px START */
+  .classes-title {
+    font-size: 18px;
+  }
+  /* Classes 575px END */
+
+  /* Instructors 575px START */
+  .instructors-item {
+    width: 100%;
+  }
+  /* Instructors 575px END */
 }
 /* Responsive END */
