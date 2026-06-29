@@ -386,19 +386,20 @@
 .faq-question::after {
   content: url('../images/faq/plus.svg');
   position: absolute;
-  top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 30px;
   width: 32px;
   height: 32px;
   transition: 0.5s ease;
 }
 .faq-question.is-active::after {
-  transform: rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 .faq-answer {
   display: none;
   background-color: #eee;
-  padding: 20px 130px 20px 30px;
+  padding: 20px 106px 20px 30px;
   font-size: 22px;
   line-height: 1.6;
   border-radius: 5px;
@@ -709,15 +710,20 @@
   .title-column {
     margin-bottom: 30px;
   }
+  .title-column .title-text {
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 1.4;
+  }
   .p-100 {
     padding: 60px 0;
   }
   /* Global 992 END */
 
+  /* Header 992px START */
   .header-bottom-row {
     padding: 20px 0;
   }
-  /* Header 992px START */
   .header-logo img {
     max-width: 120px;
   }
@@ -837,6 +843,7 @@
   }
   .title-column .title-text {
     font-size: 36px;
+    margin-bottom: 10px;
   }
   .about-row {
     flex-direction: column;
@@ -882,6 +889,13 @@
     height: 400px;
   }
   /* Instructors 992px END */
+
+  /* Gallery 992px START */
+  .grid-sizer,
+  .grid-item {
+    width: calc(33.3% - 15px);
+  }
+  /* Gallery 992px END */
 }
 
 @media (max-width: 768px) {
@@ -894,6 +908,16 @@
     font-size: 20px;
   }
   /* Instructors 768px END */
+
+  /* FAQ 768px START */
+  .faq-question {
+    font-size: 18px;
+    padding: 20px 60px 20px 20px;
+  }
+  .faq-answer {
+    padding: 20px 80px 20px 20px;
+  }
+  /* FAQ 768px END */
 }
 
 @media (max-width: 575px) {
@@ -908,7 +932,9 @@
   .title-row .title-icon img {
     max-width: 45px;
   }
-
+  .title-column .title-text {
+    font-size: 32px;
+  }
   /* Global 575px END */
 
   /* Header 575px START */
@@ -944,5 +970,25 @@
     width: 100%;
   }
   /* Instructors 575px END */
+
+  /* Gallery 575px START */
+  .grid-sizer,
+  .grid-item {
+    width: calc(50% - 10px);
+  }
+  .gallery-btn {
+    margin-top: 20px;
+  }
+  /* Gallery 575px END */
+
+  /* FAQ 575px START */
+  .faq-question::after {
+    right: 20px;
+  }
+  .faq-answer {
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+  /* FAQ 575px END */
 }
 /* Responsive END */

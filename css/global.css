@@ -193,14 +193,14 @@ a {
   margin-bottom: 60px;
 }
 .title-column .title-text {
-  margin-bottom: 0;
   font-size: 42px;
+  margin-bottom: 10px;
 }
 .title-column .title-desc {
   color: #9d9c9c;
 }
 .title-column .title-icon img {
-  max-width: 48px;  
+  max-width: 48px;
 }
 .bg-gray {
   background-color: #f4f4f4;
@@ -254,4 +254,3 @@ select {
   outline: none;
 }
 /* Global Styles END */
-
