@@ -87,10 +87,22 @@ document.addEventListener(
     // Reviews START
     const swiperReviews = new Swiper('.swiper-reviews', {
       speed: 700,
+      slidesPerView: 1,
       spaceBetween: 20,
-      slidesPerView: 4,
       grabCursor: true,
       loop: true,
+
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
 
       pagination: {
         el: '.swiper-reviews .swiper-pagination',

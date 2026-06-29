@@ -251,6 +251,7 @@ select {
   background-repeat: no-repeat;
   background-position: 94% center;
   background-size: 15px;
+  padding-right: 35px;
   outline: none;
 }
 /* Global Styles END */
