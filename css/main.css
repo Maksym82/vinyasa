@@ -467,6 +467,8 @@
 .contacts-wrap {
   position: relative;
   z-index: 0;
+  background-size: cover;
+  background-position: 70% top;
 }
 .contacts-wrap::before {
   content: '';
@@ -910,6 +912,7 @@
   /* Contacts 992px START  */
   .contacts-row {
     flex-direction: column;
+    padding: 60px 40px;
   }
   .contacts-left {
     margin-right: 0;
@@ -921,8 +924,15 @@
     column-gap: 20px;
     margin-bottom: 20px;
   }
-  .contacts-right  {
+  .contacts-right {
     width: 100%;
+  }
+  .contacts-item {
+    justify-content: center;
+  }
+  .contacts-title {
+    text-align: center;
+    font-size: 32px;
   }
   /* Contacts 992px END  */
 }
@@ -1025,5 +1035,28 @@
     font-size: 20px;
   }
   /* Reviews 575px END */
+
+  /* Contacts 575px START  */
+  .contacts-left form .form-group {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .contacts-left form .form-group input,
+  .contacts-left form .form-group select {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form-single textarea {
+    height: 200px;
+  }
+  /* Contacts 575px END  */
+}
+
+@media (max-width: 420px) {
+  /* Contacts 420px START  */
+  .contacts-row {
+    padding: 40px 20px;
+  }
+  /* Contacts 420px END  */
 }
 /* Responsive END */
