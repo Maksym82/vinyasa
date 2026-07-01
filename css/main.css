@@ -570,6 +570,54 @@
 }
 /* Contacts END */
 
+/* Breadcrumbs START */
+.breadcrumbs-wrap {
+  background-color: var(--color-1);
+  color: var(--color-white);
+  text-align: center;
+  padding: 58px 0;
+}
+.breadcrumbs-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.breadcrumbs-wrap .container > span {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 18px;
+}
+.breadcrumb-last {
+  font-weight: 700;
+}
+/* Breadcrumbs END*/
+
+/* About inner START */
+.about-inner .about-row {
+  justify-content: center;
+}
+.about-inner .about-image-1 img {
+  max-width: 457px;
+}
+.about-inner .about-left {
+  max-width: 518px;
+}
+.about-inner .about-desc {
+  color: var(--color-text);
+}
+.about-inner .about-desc strong {
+  color: var(--color-black);
+}
+.about-inner-btn {
+  margin-top: 50px;
+}
+.about-inner .about-right {
+  margin-left: 0;
+}
+/* About inner END */
+
 /* Footer START */
 .footer {
   background-color: #2b2632;

@@ -61,6 +61,8 @@
   --color-1-hover: #465fad;
   --color-2: #2d3a4e;
   --color-white: #fff;
+  --color-text: #757171;
+  --color-black: #000;
   --size: 50px;
 }
 * {
