@@ -110,6 +110,13 @@ document.addEventListener(
       },
     });
     // Reviews END
+
+    // Video START
+    $('.magnific-inline').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-with-zoom',
+    });
+    // Video END
   },
   false,
 );

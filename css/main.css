@@ -615,6 +615,49 @@
 }
 .about-inner .about-right {
   margin-left: 0;
+  top: 0;
+}
+.about-numbers-inner {
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 0;
+  padding: 50px 180px;
+}
+.about-numbers-inner .numbers-subtitle {
+  color: #c1c1c1;
+}
+.video-item a {
+  position: relative;
+  display: block;
+  max-width: 790px;
+  height: 497px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.video-item a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 44, 44, 0.3);
+  z-index: 0;
+}
+.video-item a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.video-play img {
+  max-width: 65px;
 }
 /* About inner END */
 
@@ -753,6 +796,12 @@
     margin-right: 50px;
   }
   /* Contacts 1200px END  */
+
+  /* About inner 1200px START */
+  .about-numbers-inner {
+    padding: 50px 0;
+  }
+  /* About inner 1200px END */
 
   /* Footer 1200px START */
   .footer-left {
@@ -991,6 +1040,15 @@
   }
   /* Contacts 992px END  */
 
+  /* About inner 992px START */
+  .about-inner .about-image-1 img {
+    max-width: 100%;
+  }
+  .about-inner-btn {
+    margin-top: 20px;
+  }
+  /* About inner 992px END */
+
   /* Footer 992px START */
   .footer-row {
     flex-direction: column;
@@ -1026,6 +1084,12 @@
     padding: 20px 80px 20px 20px;
   }
   /* FAQ 768px END */
+
+  /* About inner 1200px START */
+  .about-numbers-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* About inner 1200px END */
 }
 
 @media (max-width: 575px) {
@@ -1119,6 +1183,15 @@
     height: 200px;
   }
   /* Contacts 575px END  */
+
+  /* About inner Video 575px START */
+    .video-item a {
+      height: 300px;
+    }
+    .video-play img {
+      max-width: 50px;
+    }
+  /* About inner Video 575px END */
 
   /* Footer 575px START */
   .footer-logo {

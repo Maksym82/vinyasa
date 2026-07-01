@@ -176,6 +176,9 @@ a {
 .p-100 {
   padding: 100px 0;
 }
+.p-60 {
+  padding: 60px 0;
+}
 .title-row {
   display: flex;
   align-items: center;
