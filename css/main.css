@@ -661,6 +661,25 @@
 }
 /* About inner END */
 
+/* Instructors inner START */
+.instructors-about-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 45px;
+}
+.instructors-about-left img {
+  max-width: 450px;
+  border-radius: 5px;
+}
+.instructors-about-right {
+  max-width: 500px;
+}
+.instructors-desc {
+  color: var(--color-text);
+}
+/* Instructors inner END */
+
 /* Footer START */
 .footer {
   background-color: #2b2632;
@@ -1049,6 +1068,15 @@
   }
   /* About inner 992px END */
 
+  /* Instructors inner 992 START */
+  .instructors-about-left img {
+    max-width: 360px;
+  }
+  .instructors-about-row {
+    column-gap: 30px;
+  }
+  /* Instructors inner 992 END */
+
   /* Footer 992px START */
   .footer-row {
     flex-direction: column;
@@ -1085,11 +1113,31 @@
   }
   /* FAQ 768px END */
 
-  /* About inner 1200px START */
+  /* About inner 768px START */
   .about-numbers-inner {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* About inner 1200px END */
+  /* About inner 768px END */
+
+  /* Instructors inner 768px START */
+  .instructors-about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .instructors-about-left {
+    width: 100%;
+  }
+  .instructors-about-left img,
+  .instructors-about-right {
+    max-width: none;
+  }
+  .instructors-about-left img {
+    width: 100%;
+  }
+  .instructors-about .title-row br {
+    display: none;
+  }   
+  /* Instructors inner 768px END */
 }
 
 @media (max-width: 575px) {
@@ -1185,12 +1233,12 @@
   /* Contacts 575px END  */
 
   /* About inner Video 575px START */
-    .video-item a {
-      height: 300px;
-    }
-    .video-play img {
-      max-width: 50px;
-    }
+  .video-item a {
+    height: 300px;
+  }
+  .video-play img {
+    max-width: 50px;
+  }
   /* About inner Video 575px END */
 
   /* Footer 575px START */
@@ -1214,6 +1262,15 @@
     font-size: 14px;
   }
   /* Footer 575px END */
+
+  /* Breadcrumbs 575 START */
+    .breadcrumbs-title {
+      font-size: 36px;
+    }
+    .breadcrumbs-wrap .container > span {
+      font-size: 16px;
+    }
+  /* Breadcrumbs 575 END */
 }
 
 @media (max-width: 420px) {
