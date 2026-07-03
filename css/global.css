@@ -69,11 +69,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Roboto';
   color: #000;
@@ -83,6 +78,7 @@ body {
   min-width: 320px;
   position: relative;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 input,

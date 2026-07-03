@@ -679,6 +679,9 @@
 .instructors-desc {
   color: var(--color-text);
 }
+.instructors-desc ul {
+  padding-left: 15px;
+}
 /* Instructors inner END */
 
 /* Instructors single START */
@@ -723,6 +726,59 @@
   margin-top: 20px;
 }
 /* Instructors single END */
+
+/* Classes single START */
+.classes-about-row {
+  display: flex;
+  column-gap: 35px;
+}
+.classes-sidebar {
+  position: sticky;
+  top: 10px;
+  min-width: 310px;
+  height: 100%;
+}
+.classes-sidebar ul {
+  background-color: #f4f0f0;
+  border-radius: 5px;
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+.classes-sidebar ul li a {
+  display: block;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: 0.35s ease;
+}
+.classes-sidebar ul li.is-active {
+  background-color: var(--color-1);
+  color: var(--color-white);
+}
+.classes-sidebar ul li a:hover {
+  background-color: var(--color-1);
+  color: var(--color-white);
+}
+.classes-content-image {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.classes-content-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.classes-content-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.classes-content p {
+  color: var(--color-text);
+}
+/* Classes single END */
 
 /* Footer START */
 .footer {
@@ -1133,14 +1189,23 @@
   /* Instructors inner 992 END */
 
   /* Instructors single 992px START */
-    .inst-contact-row {
-      flex-wrap: wrap;
-      row-gap: 25px;
-    }
-    .inst-contact-item {
-      width: 100%;
-    }
+  .inst-contact-row {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+  .inst-contact-item {
+    width: 100%;
+  }
   /* Instructors single 992px END */
+
+  /* Classes single 992 START */
+  .classes-sidebar {
+    min-width: 260px;
+  }
+  .classes-sidebar ul li a {
+    font-size: 16px;
+  }
+  /* Classes single 992 END */
 
   /* Footer 992px START */
   .footer-row {
@@ -1203,6 +1268,28 @@
     display: none;
   }
   /* Instructors inner 768px END */
+
+  /* Classes single 768px START */
+  .classes-about-row {
+    flex-direction: column;
+  }
+  .classes-sidebar {
+    position: static;
+    margin-top: 10px;
+    order: 1;
+  }
+  .classes-sidebar ul li a {
+    padding: 15px 20px;
+  }
+  .classes-content-image {
+    margin-bottom: 20px;
+  }
+  .classes-content-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  /* Classes single 768px END */
 }
 
 @media (max-width: 575px) {
