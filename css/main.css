@@ -840,12 +840,26 @@
   padding: 0;
 }
 .paginations .page-numbers li a {
-  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  padding: 12px 20px;
   background-color: #e8e8e8;
   border-radius: 5px;
   font-size: 18px;
 }
-
+.paginations .page-numbers li .current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  padding: 12px 20px;
+  background-color: var(--color-1);
+  color: var(--color-white);
+  border-radius: 5px;
+  font-size: 18px;
+}
 /* Blog END */
 
 /* Footer START */
