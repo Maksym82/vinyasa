@@ -783,7 +783,7 @@
 /* Blog START */
 .blog-row {
   display: flex;
-  column-gap: 40px;
+  column-gap: 35px;
 }
 .blog-item {
   border-bottom: 1px solid #e5e1e1;
@@ -797,7 +797,7 @@
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 20px;
-  height: 360px;
+  height: auto;
 }
 .blog-thumb a,
 .blog-thumb img {
@@ -838,7 +838,8 @@
 }
 .paginations .page-numbers {
   display: flex;
-  column-gap: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
   list-style-type: none;
   padding: 0;
 }
@@ -897,6 +898,68 @@
 }
 .widget_search form button:hover {
   background-color: var(--color-1-hover);
+}
+.widget_categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+.widget_categories ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.widget_categories ul li a {
+  color: #635f5f;
+  transition: 0.35s ease;
+}
+.widget_categories ul li a:hover {
+  color: var(--color-black);
+}
+.widget_recent_entries ul {
+  list-style-type: none;
+  padding: 0;
+}
+.widget_recent_entries ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.widget_recent_entries ul li a {
+  display: block;
+  color: #635f5f;
+  margin-bottom: 5px;
+  transition: 0.35s ease;
+}
+.widget_recent_entries ul li a:hover {
+  color: var(--color-black);
+}
+.widget_recent_entries .post-date {
+  color: #a8a8a8;
+}
+.widget_recent_entries .post-date::before {
+  content: '\f133';
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.widget_tagcloud .tagcloud {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+.widget_tagcloud .tagcloud li {
+  display: inline-block;
+}
+.widget_tagcloud .tagcloud li a {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid #ccc8c8;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.35s ease;
+}
+.widget_tagcloud .tagcloud li a:hover {
+  border-color: var(--color-1);
+  color: var(--color-1);
 }
 /* Blog END */
 
@@ -1327,6 +1390,16 @@
   }
   /* Classes single 992 END */
 
+  /* Blog 992 START */
+  .blog-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .blog-left {
+    max-width: none;
+  }
+  /* Blog 992 END */
+
   /* Footer 992px START */
   .footer-row {
     flex-direction: column;
@@ -1512,6 +1585,18 @@
     max-width: 50px;
   }
   /* About inner Video 575px END */
+
+  /* Blog 575 START */
+  .paginations .page-numbers li a {
+    font-size: 16px;  
+  }
+  .blog-title {
+    font-size: 20px;
+  }
+  .blog-date {
+    font-size: 14px;
+  }
+  /* Blog 575 END */
 
   /* Footer 575px START */
   .footer-logo {
