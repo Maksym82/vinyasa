@@ -833,6 +833,9 @@
 .blog-excerpt p {
   margin-bottom: 0;
 }
+.paginations {
+  margin-top: 40px;
+}
 .paginations .page-numbers {
   display: flex;
   column-gap: 15px;
@@ -848,6 +851,13 @@
   background-color: #e8e8e8;
   border-radius: 5px;
   font-size: 18px;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease;
+}
+.paginations .page-numbers li a:hover {
+  background-color: var(--color-1);
+  color: var(--color-white);
 }
 .paginations .page-numbers li .current {
   display: flex;
@@ -859,6 +869,34 @@
   color: var(--color-white);
   border-radius: 5px;
   font-size: 18px;
+}
+.widget:not(:last-child) {
+  margin-bottom: 40px;
+}
+.widget-title {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.widget_search form {
+  display: flex;
+}
+.widget_search form input[type='text'] {
+  background-color: #eee;
+  border: none;
+  width: 100%;
+}
+.widget_search form button {
+  background-color: var(--color-1);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  min-width: 56px;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+.widget_search form button:hover {
+  background-color: var(--color-1-hover);
 }
 /* Blog END */
 
