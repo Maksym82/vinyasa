@@ -1125,6 +1125,35 @@
 .comment:not(:last-child) {
   margin-bottom: 30px;
 }
+.comment-reply-title {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.comment-respond input,
+.comment-respond textarea {
+  width: 100%;
+}
+.comment-respond textarea {
+  resize: none;
+  min-height: 218px;
+}
+.comment-respond .form-submit button {
+  background-color: var(--color-1);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 19px 46px;
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+.comment-respond .form-submit button:hover {
+  background-color: var(--color-1-hover);
+}
 /* Article END */
 
 /* Footer START */
