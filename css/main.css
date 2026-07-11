@@ -1023,6 +1023,7 @@
 }
 .article-nav-thumb {
   width: 66px;
+  min-width: 66px;
   margin-right: 12px;
   border-radius: 5px;
   overflow: hidden;
@@ -1790,6 +1791,18 @@
     font-size: 14px;
   }
   /* Blog 575 END */
+
+  /* Article 575 START */
+  .article-nav-thumb {
+    display: none;
+  }
+  .comment-body {
+    flex-direction: column;
+  }
+  .comment-author {
+    margin-bottom: 10px;
+  }
+  /* Article 575 END */
 
   /* Footer 575px START */
   .footer-logo {
