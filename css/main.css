@@ -1755,6 +1755,15 @@
   }
   /* Global 575px END */
 
+  /* Modal 575 START */
+  .modal-logo img {
+    max-width: 130px;
+  }
+  .modal-title {
+    font-size: 24px;
+  }
+  /* Modal 575 END */
+
   /* Header 575px START */
   .header-logo img {
     max-width: 110px;

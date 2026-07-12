@@ -1,10 +1,18 @@
 document.addEventListener(
   'DOMContentLoaded',
   function () {
+
     // Modal START
     $('.magnific-inline').magnificPopup({
       type: 'inline',
-      mainClass: 'mfp-with-zoom',
+      showCloseBtn: false,
+      removalDelay: 700,
+      // mainClass: 'mfp-with-zoom',
+      callbacks: {
+        beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
     });
     $('.modal-close').on('click', function() {
       $.magnificPopup.close();

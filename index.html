@@ -144,7 +144,13 @@
               </ul>
             </nav>
             <div class="header-btn">
-              <a class="magnific-inline" href="#modal-form">Записаться</a>
+              <a
+                class="magnific-inline"
+                href="#modal-form"
+                data-effect="mfp-3d-unfold"
+              >
+                Записаться
+              </a>
             </div>
             <div class="hamburger">
               <i class="fa fa-bars" aria-hidden="true"></i>
@@ -280,14 +286,20 @@
             </ul>
           </nav>
           <div class="header-mobile-btn">
-            <a href="#">Записаться</a>
+            <a
+              class="magnific-inline"
+              href="#modal-form"
+              data-effect="mfp-3d-unfold"
+            >
+              Записаться
+            </a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- Modal form -->
-    <div class="modal-form-wrap mfp-hide" id="modal-form">
+    <div class="modal-form-wrap mfp-hide mfp-with-anim" id="modal-form">
       <div class="modal-form-head">
         <div class="modal-logo">
           <img src="./images/header/logo-header.svg" alt="Логотип Vinyasa" />
@@ -299,15 +311,15 @@
       <div class="modal-body">
         <h4 class="modal-title">Записаться на занятие</h4>
         <form>
-            <p>
-              <input type="text" placeholder="Ваше имя*" required>
-            </p>
-            <p>
-              <input type="tel" placeholder="Ваше телефон*" required>
-            </p>
-            <p>
-              <button class="button">Отправить</button>
-            </p>
+          <p>
+            <input type="text" placeholder="Ваше имя*" required />
+          </p>
+          <p>
+            <input type="tel" placeholder="Ваше телефон*" required />
+          </p>
+          <p>
+            <button class="button">Отправить</button>
+          </p>
         </form>
       </div>
     </div>
