@@ -1,6 +1,16 @@
 document.addEventListener(
   'DOMContentLoaded',
   function () {
+    // Modal START
+    $('.magnific-inline').magnificPopup({
+      type: 'inline',
+      mainClass: 'mfp-with-zoom',
+    });
+    $('.modal-close').on('click', function() {
+      $.magnificPopup.close();
+    });
+    // Modal END
+
     // Header START
     $('.open-submenu').on('click', function () {
       var submenu = $(this).prev('.sub-menu');
@@ -112,7 +122,7 @@ document.addEventListener(
     // Reviews END
 
     // Video START
-    $('.magnific-inline').magnificPopup({
+    $('.magnific-iframe').magnificPopup({
       type: 'iframe',
       mainClass: 'mfp-with-zoom',
     });
