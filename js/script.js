@@ -1,7 +1,6 @@
 document.addEventListener(
   'DOMContentLoaded',
   function () {
-
     // Modal START
     $('.magnific-inline').magnificPopup({
       type: 'inline',
@@ -9,15 +8,37 @@ document.addEventListener(
       removalDelay: 700,
       // mainClass: 'mfp-with-zoom',
       callbacks: {
-        beforeOpen: function() {
+        beforeOpen: function () {
           this.st.mainClass = this.st.el.attr('data-effect');
-        }
+        },
       },
     });
-    $('.modal-close').on('click', function() {
+    $('.modal-close').on('click', function () {
       $.magnificPopup.close();
     });
     // Modal END
+
+    // Scroll up START
+    function scrollUpShow() {
+      if ($(this).scrollTop() > 1700) {
+        $('.scroll-arrow-up').addClass('is-active');
+      } else {
+        $('.scroll-arrow-up').removeClass('is-active');
+      }
+    }
+    scrollUpShow();
+    $(window).on('scroll', function () {
+      scrollUpShow();
+    });
+    $('.scroll-arrow-up').on('click', function() {
+      $('html, body').animate({
+        scrollTop: 0
+      },
+      {
+        duration: 1200
+      });
+    })
+    // Scroll up END
 
     // Header START
     $('.open-submenu').on('click', function () {

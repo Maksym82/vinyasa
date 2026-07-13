@@ -491,3 +491,31 @@ select {
 }
 
 /* Magnific effects END */
+
+/* Scrol up START */
+.scroll-arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-1);
+  z-index: 12;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.35s ease;
+  transform: translateX(100px);
+}
+.scroll-arrow-up.is-active {
+  transform: none;
+}
+.scroll-arrow-up:hover {
+  background-color: var(--color-1-hover);
+}
+.scroll-arrow-up img {
+  max-width: 30px;
+}
+/* Scrol up END */
