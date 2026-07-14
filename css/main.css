@@ -1,5 +1,9 @@
 @import url('global.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Modal form START */
 .modal-form-wrap {
   max-width: 460px;
