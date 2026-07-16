@@ -26,18 +26,19 @@ document.addEventListener(
         $('.scroll-arrow-up').removeClass('is-active');
       }
     }
+
     scrollUpShow();
+
     $(window).on('scroll', function () {
       scrollUpShow();
     });
-    $('.scroll-arrow-up').on('click', function() {
-      $('html, body').animate({
-        scrollTop: 0
-      },
-      {
-        duration: 1200
+
+    $('.scroll-arrow-up').on('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
       });
-    })
+    });
     // Scroll up END
 
     // Header START
